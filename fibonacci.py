@@ -7,19 +7,31 @@
 # You may start your array like this:
 # list = [0, 1]
 
-// EX 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
+# // EX 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
+#
+#
+# list = [0,1];
+#
+# def fibonacci(count):
+#   start = 1
+#   list.append(start)
+#   next = start
+#   list.append(next)
+#   for i in range(count):
+#     list[i] = list[i-2] + list[i-1]
+#
+# fibonacci(10)
+#
+# print(list)
 
 
-list = [0,1];
+arr = [0,1]
 
 def fibonacci(count):
-  start = 1
-  list.append(start)
-  next = start
-  list.append(next)
-  for i in range(2, count):
-    list[i] = list[i-2] + list[i-1]
+  for num in range(2, count):
+    thing = arr[num-2] + arr[num-1]
+    arr.append(thing)
+  print(arr)
+
 
 fibonacci(10)
-
-print(list)
