@@ -1,15 +1,14 @@
 
+def make_change(cents):
+  # return the fewest coins possible
 
 
+  quarters = 0
+  dimes = 0
+  nickles = 0
 
-def greedy(cash):
-  //get just the cents
-
-
-
-  # quarters = 0
-  # dimes = 0
-  # nickles = 0
+  # cents = ???? get just the .22 from 4.22
+  #
   # if cents % 25 == 0:
   #   quarters = Int(cents / 25)
   #   return quarters
@@ -29,4 +28,43 @@ def greedy(cash):
 
 
 
-print(greedy(4.22))
+print(make_change(.80))
+
+
+def make_change(cents):
+  # return the fewest coins possible
+
+  quarters = 0
+  dimes = 0
+  nickles = 0
+
+  # cents = ???? get just the .22 from 4.22
+
+
+  if cents >= 25:
+    quarters = cents // 25
+    cents -= (quarters * 25)
+    print(cents)
+    return cents
+  if cents >= 10:
+    dimes = cents // 10
+    cents -= (dimes * 10)
+    return cents
+  if cents >= 5:
+    nickles = cents // 5
+    cents -= (nickles * 5)
+    return cents
+  if cents >= 0:
+    return cents
+  print(quarters + dimes + nickles + pennies)
+
+
+
+print(make_change(80))
+
+
+
+
+
+
+print(80 // 25)

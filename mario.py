@@ -1,4 +1,4 @@
-#Implement a program that prints out a half-pyramid of a specified height.
+#Implement a program that prints out a half-pyramid of a specified height like in the game mario
 
 
 # makes a pyramid going up
